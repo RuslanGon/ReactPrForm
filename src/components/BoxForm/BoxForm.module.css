@@ -1,61 +1,87 @@
+.css.div {
+    border-radius: 30px;
+    width: 672px;
+    height: 1736px;
+    background: #f0eff4;
+}
+
 .boxForm {
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
-    width: 672px;
-    height: 736px;
-    margin: auto;
-    background: #f0eff4;
-  }
+    width: 436px;
+    height: 398px;
+    margin-left: 118px;
 
-  .maintitle {
+}
+
+.maintitle {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 24px;
-line-height: 1;
-letter-spacing: -0.01em;
-text-transform: uppercase;
-color: #323f47;
-margin-left: 32px;
-margin-top: 32px;
-margin-bottom: 113px;
-  }
-  
-  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #323f47;
+    padding: 32px 32px;
+
+}
+
+.title {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.05556;
-letter-spacing: -0.01em;
-color: #323f47;
-margin-bottom: 32px;
-  }
-  
-  .label {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.05556;
+    letter-spacing: -0.01em;
+    color: #323f47;
+}
+
+.label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-  }
-  
-  .labelText {
-    margin-bottom: 5px;
-  }
-  
-  .input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .button {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
+}
+
+.labelText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2f2f2f;
+}
+
+.input {
+    border: 1px solid rgba(47, 47, 47, 0.2);
+    border-radius: 15px;
+    padding: 16px 293px 16px 16px;
+    width: 436px;
+    height: 56px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: rgba(47, 47, 47, 0.6);
+
+}
+
+.button {
+    border-radius: 30px;
+    padding: 18px 191px;
+    width: 436px;
+padding: 18px 190px;
+    background: #9be1a0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+
+    color: #323f47;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+}
+
+.button:hover {
+    background: #87d28d;
+}

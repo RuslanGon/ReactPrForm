@@ -2,8 +2,10 @@ import css from "../BoxForm/BoxForm.module.css";
 
 const BoxForm = () => {
   return (
+    <div className={css.div}>
+        <h1 className={css.maintitle}>AquaTrack</h1>
     <form className={css.boxForm}>
-      <h1 className={css.maintitle}>AquaTrack</h1>
+      
       <h2 className={css.title}>Sign In</h2>
       <label className={css.label}>
         <span className={css.labelText}>Email</span>
@@ -27,6 +29,8 @@ const BoxForm = () => {
         Sign In
       </button>
     </form>
+    <p>Don’t have an account? <a href="">Sign Up</a></p>
+    </div>
   );
 };
 
