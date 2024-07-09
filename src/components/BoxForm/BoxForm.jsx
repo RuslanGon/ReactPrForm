@@ -1,9 +1,8 @@
-
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import * as Yup from 'yup'; // Необходимо для валидации, хотя react-hook-form не требует использования Yup
+import * as Yup from 'yup';
 import css from '../BoxForm/BoxForm.module.css';
 import { yupResolver } from '@hookform/resolvers/yup';
-
 
 const validationSchema = Yup.object().shape({
   userEmail: Yup.string().email('Invalid email').required('Required'),
@@ -11,14 +10,17 @@ const validationSchema = Yup.object().shape({
 });
 
 const BoxForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm({
-    resolver: yupResolver(validationSchema) // Используем Yup для валидации с помощью resolver
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    resolver: yupResolver(validationSchema)
   });
 
   const onSubmit = (data) => {
     console.log('Email:', data.userEmail);
     console.log('Password:', data.password);
     // Ваши дополнительные действия после отправки формы
+
+    // Сбросить значения формы после отправки
+    reset();
   };
 
   return (
