@@ -1,6 +1,6 @@
 
 import { Formik, Form, Field } from 'formik';
-import * as Yup from 'yup'; // Для валидации
+import * as Yup from 'yup'; 
 import css from '../BoxForm/BoxForm.module.css';
 
 const validationSchema = Yup.object().shape({
