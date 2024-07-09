@@ -1,41 +1,63 @@
-import css from "../BoxForm/BoxForm.module.css";
+
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup'; // Для валидации
+import css from '../BoxForm/BoxForm.module.css';
+
+const validationSchema = Yup.object().shape({
+  userEmail: Yup.string().email('Invalid email').required('Required'),
+  password: Yup.string().required('Required'),
+});
 
 const BoxForm = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const email = event.currentTarget.elements.userEmail.value;
-    const password = event.currentTarget.elements.password.value;
-    console.log(email, password);
-    
+  const handleSubmit = (values, { resetForm }) => {
+    console.log('Email:', values.userEmail);
+    console.log('Password:', values.password);
+    resetForm();
   };
+
   return (
     <div className={css.div}>
       <h1 className={css.maintitle}>AquaTrack</h1>
-      <form onSubmit={handleSubmit} className={css.boxForm}>
-        <h2 className={css.title}>Sign In</h2>
-        <label className={css.label}>
-          <span className={css.labelText}>Email</span>
-          <input
-            type="email"
-            name="userEmail"
-            placeholder="Enter your email"
-            className={css.input}
-          />
-        </label>
-        <label className={css.label}>
-          <span className={css.labelText}>Password</span>
-          <input
-            type="text"
-            name="password"
-            placeholder="Enter your password"
-            className={css.input}
-          />
-        </label>
-        <button type="submit" className={css.button}>
-          Sign In
-        </button>
-      </form>
+      <Formik
+        initialValues={{ userEmail: '', password: '' }}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
+      >
+        {({ errors, touched }) => (
+          <Form className={css.boxForm}>
+            <h2 className={css.title}>Sign In</h2>
+            <div className={css.label}>
+              <label htmlFor="userEmail" className={css.labelText}>Email</label>
+              <Field
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                placeholder="Enter your email"
+                className={css.input}
+              />
+              {errors.userEmail && touched.userEmail && (
+                <div className="error">{errors.userEmail}</div>
+              )}
+            </div>
+            <div className={css.label}>
+              <label htmlFor="password" className={css.labelText}>Password</label>
+              <Field
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                className={css.input}
+              />
+              {errors.password && touched.password && (
+                <div className="error">{errors.password}</div>
+              )}
+            </div>
+            <button type="submit" className={css.button}>
+              Sign In
+            </button>
+          </Form>
+        )}
+      </Formik>
       <p>
         Don’t have an account? <a href="">Sign Up</a>
       </p>
