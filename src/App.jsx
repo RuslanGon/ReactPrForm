@@ -15,14 +15,12 @@ const finalUsers = {
 setUser((PrevState) => [...PrevState, finalUsers])
 }
 
-const handleCounter = () => {
-  console.log('hello Ruslan');
-}
+
 
   return (
     <>
      <BoxForm />
-     <Counter handleCounter={handleCounter} />
+     <Counter  />
     </>
   )
 }
