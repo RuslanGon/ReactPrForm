@@ -10,8 +10,8 @@ const  Counter = ({handleCounter}) => {
         <h3>Correct entered data:</h3>
         <p>Amount of water:</p>
         <button className={css.buttonCounter}><img src={plus} alt="" /></button>
-        <button onClick={handleCounter}>hello</button>
-        <button className={css.buttonCounter}><img src={plus1} alt="" /></button>
+        <button >hello</button>
+        <button className={css.buttonCounter}onClick={handleCounter}><img src={plus1} alt="" /></button>
     </div>
   )
 }
