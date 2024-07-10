@@ -3,3 +3,22 @@
     border: none;
     cursor: pointer;
 }
+
+.buttonCounterMain {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.49333;
+    color: #fff;
+    border-radius: 30px;
+padding: 11px 20px;
+width: 92px;
+height: 43px;
+background: #323f47;
+}
+
+.buttonDiv {
+    display: flex;
+    align-items: center;
+
+}

@@ -14,9 +14,6 @@ const finalUsers = {
 }
 setUser((PrevState) => [...PrevState, finalUsers])
 }
-
-
-
   return (
     <>
      <BoxForm />
