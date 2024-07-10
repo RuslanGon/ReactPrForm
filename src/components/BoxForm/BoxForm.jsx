@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import css from '../BoxForm/BoxForm.module.css';
 import { yupResolver } from '@hookform/resolvers/yup';
+import eye from '../../image/eye-off.png'
 
 const validationSchema = Yup.object().shape({
   userEmail: Yup.string().email('Invalid email').required('Required'),
@@ -47,9 +48,10 @@ const BoxForm = () => {
             id="password"
             name="password"
             placeholder="Enter your password"
-            className={css.input}
+            className={css.input1}
             {...register('password')}
           />
+          <img className={css.eyeImg} src={eye} alt="" />
           {errors.password && <div className="error">{errors.password.message}</div>}
         </div>
         <button type="submit" className={css.button}>
