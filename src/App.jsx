@@ -4,6 +4,7 @@ import './App.css'
 import { nanoid } from 'nanoid'
 import BoxForm from './components/BoxForm/BoxForm'
 import Counter from './components/Counter/Counter'
+import Calendar from './components/Calendar/Calendar'
 
 function App() {
 const [users, setUser] = useState()
@@ -18,6 +19,7 @@ setUser((PrevState) => [...PrevState, finalUsers])
     <>
      <BoxForm />
      <Counter  />
+     <Calendar />
     </>
   )
 }
