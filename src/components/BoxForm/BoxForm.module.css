@@ -105,9 +105,10 @@ color: rgba(47, 47, 47, 0.5);
 .eyeImg {
     width: 20px;
     height: 20px;
-
+    cursor: pointer;
     position: absolute;
-  top: 50%;
-  right: -290px; /* Отступ от правого края инпута */
-  transform: translateY(-50%);
+    top: 50%;
+    right: -290px;
+    /* Отступ от правого края инпута */
+    transform: translateY(-50%);
 }
