@@ -5,12 +5,6 @@ function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
 
-  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
-  const renderDaysOfWeek = () => {
-    return daysOfWeek.map(day => <div key={day} className={css.dayOfWeek}>{day}</div>);
-  };
-
   const renderDaysInMonth = () => {
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
@@ -40,15 +34,11 @@ function Calendar() {
   return (
     <div className={css.customCalendar}>
       <div className={css.calendarHeader}>
-       <span>Month</span>
+        <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}>Prev</button>
         <span>
           {currentDate.toLocaleString('en-US', { month: 'long' })} {currentDate.getFullYear()}
         </span>
-        <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}>Prev</button>
         <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)))}>Next</button>
-      </div>
-      <div className={css.calendarDaysOfWeek}>
-        {renderDaysOfWeek()}
       </div>
       <div className={css.calendarDays}>
         {renderDaysInMonth()}
