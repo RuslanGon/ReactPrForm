@@ -30,29 +30,39 @@ const BoxForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className={css.boxForm}>
         <h2 className={css.title}>Sign In</h2>
         <div className={css.label}>
-          <label htmlFor="userEmail" className={css.labelText}>Email</label>
+          <label htmlFor="userEmail" className={css.labelText}>
+            Email
+          </label>
           <input
             type="email"
             id="userEmail"
             name="userEmail"
             placeholder="Enter your email"
             className={css.input}
-            {...register('userEmail')}
+            {...register("userEmail")}
           />
-          {errors.userEmail && <div className="error">{errors.userEmail.message}</div>}
+          {errors.userEmail && (
+            <div className="error">{errors.userEmail.message}</div>
+          )}
         </div>
         <div className={css.label}>
-          <label htmlFor="password" className={css.labelText}>Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter your password"
-            className={css.input1}
-            {...register('password')}
-          />
-          <img className={css.eyeImg} src={eye} alt="" />
-          {errors.password && <div className="error">{errors.password.message}</div>}
+          <label htmlFor="password" className={css.labelText}>
+            Password
+          </label>
+          <div className={css.inputWrapper}>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              className={css.input}
+              {...register("password")}
+            />
+            <img className={css.eyeImg} src={eye} alt="" />
+            {errors.password && (
+              <div className="error">{errors.password.message}</div>
+            )}
+          </div>
         </div>
         <button type="submit" className={css.button}>
           Sign In
