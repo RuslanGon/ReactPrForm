@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import { nanoid } from 'nanoid'
 import BoxForm from './components/BoxForm/BoxForm'
+import Counter from './components/Counter/Counter'
 
 function App() {
 const [users, setUser] = useState()
@@ -14,9 +15,14 @@ const finalUsers = {
 setUser((PrevState) => [...PrevState, finalUsers])
 }
 
+const handleCounter = () => {
+  console.log('hello Ruslan');
+}
+
   return (
     <>
      <BoxForm />
+     <Counter handleCounter={handleCounter} />
     </>
   )
 }

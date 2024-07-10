@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import css from '../BoxForm/BoxForm.module.css';
@@ -56,7 +56,7 @@ const BoxForm = () => {
           Sign In
         </button>
       </form>
-      <p>
+      <p className={css.text}>
         Don’t have an account? <a href="">Sign Up</a>
       </p>
     </div>
