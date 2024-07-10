@@ -58,7 +58,7 @@ const BoxForm = () => {
               className={css.input}
               {...register("password")}
             />
-            <img className={css.eyeImg} src={eye} alt="" />
+           <a href=""> <img className={css.eyeImg} src={eye} alt="" /></a>
             {errors.password && (
               <div className="error">{errors.password.message}</div>
             )}
