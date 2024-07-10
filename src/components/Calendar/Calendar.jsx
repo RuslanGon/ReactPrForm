@@ -29,7 +29,7 @@ function Calendar() {
           className={`${css.day} ${day === selectedDate.getDate() ? css.selected : ''}`}
           onClick={() => setSelectedDate(new Date(year, month, day))}
         >
-          {day}
+          <span>{day}</span>
         </div>
       );
     }
@@ -40,8 +40,11 @@ function Calendar() {
   return (
     <div className={css.customCalendar}>
       <div className={css.calendarHeader}>
+       <span>Month</span>
+        <span>
+          {currentDate.toLocaleString('en-US', { month: 'long' })} {currentDate.getFullYear()}
+        </span>
         <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}>Prev</button>
-        <span>{currentDate.toLocaleString('default', { month: 'long' })} {currentDate.getFullYear()}</span>
         <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)))}>Next</button>
       </div>
       <div className={css.calendarDaysOfWeek}>
