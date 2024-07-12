@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import css from './Calendar.module.css';
-import left from '../../image/left.png';
-import right from '../../image/right.png';
-import pie from '../../image/pie.png';
+import { useState } from "react";
+import css from "./Calendar.module.css";
+import left from "../../image/left.png";
+import right from "../../image/right.png";
+import pie from "../../image/pie.png";
 
 function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -21,13 +21,21 @@ function Calendar() {
     }
 
     for (let day = 1; day <= daysInMonth; day++) {
-      const isSelected = day === selectedDate.getDate() && month === selectedDate.getMonth() && year === selectedDate.getFullYear();
-      const isToday = day === today.getDate() && month === today.getMonth() && year === today.getFullYear();
+      const isSelected =
+        day === selectedDate.getDate() &&
+        month === selectedDate.getMonth() &&
+        year === selectedDate.getFullYear();
+      const isToday =
+        day === today.getDate() &&
+        month === today.getMonth() &&
+        year === today.getFullYear();
 
       days.push(
         <div
           key={day}
-          className={`${css.day} ${isSelected ? css.selected : ''} ${isToday ? css.current : ''}`}
+          className={`${css.day} ${isSelected ? css.selected : ""} ${
+            isToday ? css.current : ""
+          }`}
           onClick={() => setSelectedDate(new Date(year, month, day))}
         >
           <span>{day}</span>
@@ -42,26 +50,35 @@ function Calendar() {
     <div className={css.customCalendar}>
       <div className={css.calendarHeader}>
         <h2 className={css.title}>Month</h2>
-        <button
-          className={css.button}
-          onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}
-        >
-          <img src={left} alt="Previous month" />
-        </button>
-        <span>
-          {currentDate.toLocaleString('en-US', { month: 'long' })}, {currentDate.getFullYear()}
-        </span>
-        <button
-          className={css.button}
-          onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)))}
-        >
-          <img src={right} alt="Next month" />
-        </button>
+        <div className={css.divmoth}>
+          <button
+            className={css.button}
+            onClick={() =>
+              setCurrentDate(
+                new Date(currentDate.setMonth(currentDate.getMonth() - 1))
+              )
+            }
+          >
+            <img src={left} alt="Previous month" />
+          </button>
+          <span>
+            {currentDate.toLocaleString("en-US", { month: "long" })},{" "}
+            {currentDate.getFullYear()}
+          </span>
+          <button
+            className={css.button}
+            onClick={() =>
+              setCurrentDate(
+                new Date(currentDate.setMonth(currentDate.getMonth() + 1))
+              )
+            }
+          >
+            <img src={right} alt="Next month" />
+          </button>
+        </div>
         <img src={pie} alt="Pie chart" />
       </div>
-      <div className={css.calendarDays}>
-        {renderDaysInMonth()}
-      </div>
+      <div className={css.calendarDays}>{renderDaysInMonth()}</div>
     </div>
   );
 }
