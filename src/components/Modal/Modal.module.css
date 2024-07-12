@@ -101,3 +101,16 @@ cursor: pointer;
 margin-top: 24px;
 
   }
+
+    .button1:hover,
+    .close:focus {
+      background: #2bf038;
+      color: #000;
+    }
+  
+    .button2:hover,
+    .close:focus {
+      background: #b5b4b8;
+      color: #000;
+  
+    }

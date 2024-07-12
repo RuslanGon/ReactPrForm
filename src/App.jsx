@@ -37,8 +37,8 @@ function App() {
       <Modal show={showModal} handleClose={handleCloseModal}>
         <h2 className={css.title}>Delete entry</h2>
         <p className={css.text}>Are you sure you want to delete the entry?</p>
-        <button className={css.button1}>Delete</button>
-        <button className={css.button2}>Cancel</button>
+        <button className={css.button1} onClick={handleCloseModal}>Delete</button>
+        <button className={css.button2} onClick={handleCloseModal}>Cancel</button>
       </Modal>
     </>
   );
