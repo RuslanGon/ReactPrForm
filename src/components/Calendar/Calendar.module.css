@@ -1,20 +1,20 @@
 .customCalendar {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 608px;
     margin: auto;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .calendarHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f7f7f7;
+    background: #f0eff4;
     padding: 10px;
+    height: 32px;
   }
   
   .calendarDaysOfWeek,
@@ -52,3 +52,18 @@
     color: #000;
   }
   
+  .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .title {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.14286;
+letter-spacing: -0.01em;
+color: #323f47;
+margin-left: 20px;
+  }

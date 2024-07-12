@@ -2,6 +2,8 @@ import { useState } from 'react';
 import css from './Calendar.module.css';
 import left from '../../image/left.png';
 import right from '../../image/right.png'
+import pie from '../../image/pie.png'
+
 
 function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -36,11 +38,13 @@ function Calendar() {
   return (
     <div className={css.customCalendar}>
       <div className={css.calendarHeader}>
-        <button  onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}><img src={left} alt="" /></button>
+        <h2 className={css.title}>Month</h2>
+        <button className={css.button}  onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))}><img src={left} alt="" /></button>
         <span>
           {currentDate.toLocaleString('en-US', { month: 'long' })} {currentDate.getFullYear()}
         </span>
-        <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)))}> <img src={right} alt="" /></button>
+        <button className={css.button} onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() + 1)))}> <img src={right} alt="" /></button>
+        <img src={pie} alt="" />
       </div>
       <div className={css.calendarDays}>
         {renderDaysInMonth()}
