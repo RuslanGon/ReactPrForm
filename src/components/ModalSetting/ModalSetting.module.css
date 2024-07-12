@@ -1,4 +1,4 @@
-/* Modal.module.css */
+/* components/ModalSetting/ModalSetting.module.css */
 .modal {
     display: none;
     position: fixed;
@@ -18,16 +18,19 @@
   }
   
   .modalContent {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 518px;
-    height: 244px;
-    border-radius: 15px;
-    text-align: center;
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 15px;
+      padding: 40px;
+      width: 920px;
+      height: 996px;
+      box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
   }
-
   
   .close {
     color: #aaa;
@@ -42,9 +45,5 @@
     text-decoration: none;
     cursor: pointer;
   }
-
-
-
-
-
-   
+  
+ 

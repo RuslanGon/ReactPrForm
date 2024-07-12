@@ -12,6 +12,7 @@ import ModalSetting from './components/ModalSetting/ModalSetting';
 function App() {
   const [users, setUser] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [showSettingModal, setShowSettingModal] = useState(false);
 
   const addUsers = (formData) => {
     const finalUsers = {
@@ -29,6 +30,14 @@ function App() {
     setShowModal(false);
   };
 
+  const handleOpenSettingModal = () => {
+    setShowSettingModal(true);
+  };
+
+  const handleCloseSettingModal = () => {
+    setShowSettingModal(false);
+  };
+
   return (
     <>
       <BoxForm />
@@ -41,6 +50,10 @@ function App() {
         <button className={css.button1} onClick={handleCloseModal}>Delete</button>
         <button className={css.button2} onClick={handleCloseModal}>Cancel</button>
       </Modal>
+      <button onClick={handleOpenSettingModal}>Открыть настройки</button>
+      <ModalSetting show={showSettingModal} handleClose={handleCloseSettingModal}>
+       
+      </ModalSetting>
     </>
   );
 }
