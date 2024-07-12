@@ -9,6 +9,9 @@ import Modal from './components/Modal/Modal';
 import css from '../src/components/Modal/Modal.module.css';
 import ModalSetting from './components/ModalSetting/ModalSetting';
 
+import foto from '../src/image/foto.png';
+import upload from '../src/image/upload.png';
+
 function App() {
   const [users, setUser] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -52,6 +55,26 @@ function App() {
       </Modal>
       <button onClick={handleOpenSettingModal}>Открыть настройки</button>
       <ModalSetting show={showSettingModal} handleClose={handleCloseSettingModal}>
+      <h2>Setting</h2>
+        <img className={css.foto} src={foto} alt="" />
+        <div className={css.divfoto}>
+          <img src={upload} alt="" />
+          <p className={css.settext}>Upload a photo</p>
+        </div>
+        <h4 className={css.settitle}>Your gender identity</h4>
+        <form className={css.setForm}>
+          <label>
+            <input type="radio" />
+            <span>woman</span>
+          </label>
+          <label>
+            <input type="radio" name="" id="" />
+            <span>man</span>
+          </label>
+        
+      </form>
+
+
        
       </ModalSetting>
     </>

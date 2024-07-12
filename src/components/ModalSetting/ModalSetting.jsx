@@ -11,7 +11,6 @@ const ModalSetting = ({ show, handleClose, children }) => {
   return (
     <div className={`${css.modal} ${show ? css.show : ''}`} onClick={handleBackgroundClick}>
       <div className={css.modalContent}>
-        <h2>Setting</h2>
         <span className={css.close} onClick={handleClose}>&times;</span>
         {children}
       </div>
