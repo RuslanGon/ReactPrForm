@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 608px;
   margin: auto;
-  /* border: 1px solid #ccc; */
   border-radius: 8px;
   overflow: hidden;
 }
@@ -43,10 +42,11 @@
 
 .day span {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
+  border-radius: 30px;
+
+  width: 38px;
+  height: 38px;
+  line-height: 24px;
   background-color: #fff;
   text-align: center;
   color: #000;
