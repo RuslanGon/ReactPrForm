@@ -1,69 +1,74 @@
 .customCalendar {
-    display: flex;
-    flex-direction: column;
-    width: 608px;
-    margin: auto;
-    /* border: 1px solid #ccc; */
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .calendarHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f0eff4;
-    padding: 10px;
-    height: 32px;
-  }
-  
-  .calendarDaysOfWeek,
-  .calendarDays {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    text-align: center;
-  }
-  
-  .day,
-  .emptyDay {
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .day:hover span {
-    background-color: grey;
-  }
-  
-  .day.selected span {
-    background-color: #d0e6a5;
-  }
-  
-  .day span {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    color: #000;
-  }
-  
-  .button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  margin: auto;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  .title {
-    font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 28px;
-line-height: 1.14286;
-letter-spacing: -0.01em;
-color: #323f47;
-margin-left: 20px;
-  }
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0eff4;
+  padding: 10px;
+  height: 32px;
+}
+
+.calendarDaysOfWeek,
+.calendarDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.day,
+.emptyDay {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day:hover span {
+  background-color: grey;
+}
+
+.day.selected span {
+  background-color: #d0e6a5;
+}
+
+.day span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+}
+
+.day.current span {
+  background-color: black;
+  color: #9be1a0;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: -0.01em;
+  color: #323f47;
+  margin-left: 20px;
+}
