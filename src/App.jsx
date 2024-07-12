@@ -11,6 +11,7 @@ import ModalSetting from './components/ModalSetting/ModalSetting';
 
 import foto from '../src/image/foto.png';
 import upload from '../src/image/upload.png';
+import Form from './components/Form/Form';
 
 function App() {
   const [users, setUser] = useState([]);
@@ -50,31 +51,26 @@ function App() {
       <Modal show={showModal} handleClose={handleCloseModal}>
         <h2 className={css.title}>Delete entry</h2>
         <p className={css.text}>Are you sure you want to delete the entry?</p>
-        <button className={css.button1} onClick={handleCloseModal}>Delete</button>
-        <button className={css.button2} onClick={handleCloseModal}>Cancel</button>
+        <button className={css.button1} onClick={handleCloseModal}>
+          Delete
+        </button>
+        <button className={css.button2} onClick={handleCloseModal}>
+          Cancel
+        </button>
       </Modal>
       <button onClick={handleOpenSettingModal}>Открыть настройки</button>
-      <ModalSetting show={showSettingModal} handleClose={handleCloseSettingModal}>
-      <h2>Setting</h2>
+      <ModalSetting
+        show={showSettingModal}
+        handleClose={handleCloseSettingModal}
+      >
+        <h2>Setting</h2>
         <img className={css.foto} src={foto} alt="" />
         <div className={css.divfoto}>
           <img src={upload} alt="" />
           <p className={css.settext}>Upload a photo</p>
         </div>
         <h4 className={css.settitle}>Your gender identity</h4>
-        <form className={css.setForm}>
-          <label>
-            <input type="radio" />
-            <span>woman</span>
-          </label>
-          <label>
-            <input type="radio" name="" id="" />
-            <span>man</span>
-          </label>
-        
-      </form>
-
-
+        <Form />
        
       </ModalSetting>
     </>
