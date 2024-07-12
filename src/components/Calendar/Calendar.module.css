@@ -38,7 +38,8 @@
 }
 
 .day.selected .dayNumber {
-  background-color: #d0e6a5;
+  background-color: grey;
+
 }
 
 .day .dayNumber {
