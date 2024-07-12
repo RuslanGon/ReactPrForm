@@ -34,8 +34,8 @@ function App() {
       <Calendar />
       <button onClick={handleOpenModal}>Открыть модальное окно</button>
       <Modal show={showModal} handleClose={handleCloseModal}>
-        <h2>Это модальное окно</h2>
-        <p>Здесь можно разместить любое содержимое.</p>
+      <h2>Это модальное окно</h2>
+      <p>Здесь можно разместить любое содержимое.</p>
       </Modal>
     </>
   );
