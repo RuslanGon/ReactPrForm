@@ -35,8 +35,10 @@ function App() {
       <Calendar />
       <button onClick={handleOpenModal}>Открыть модальное окно</button>
       <Modal show={showModal} handleClose={handleCloseModal}>
-<h2 className={css.title}>Delete entry</h2>
-      <p className={css.text}>Are you sure you want to delete the entry?</p>
+        <h2 className={css.title}>Delete entry</h2>
+        <p className={css.text}>Are you sure you want to delete the entry?</p>
+        <button>Delete</button>
+        <button>Cancel</button>
       </Modal>
     </>
   );
