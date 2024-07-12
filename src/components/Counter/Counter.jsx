@@ -4,7 +4,7 @@ import plus1 from "../../image/plus (1).png";
 import { useState } from "react";
 
 const Counter = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(50);
 
   const handleCounterInc = () => {
     setCounter(counter + 50);

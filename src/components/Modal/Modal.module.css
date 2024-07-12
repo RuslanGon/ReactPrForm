@@ -22,8 +22,12 @@
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 70%;
+    width: 518px;
+    height: 244px;
+    border-radius: 15px;
+    text-align: center;
   }
+
   
   .close {
     color: #aaa;
@@ -39,3 +43,23 @@
     cursor: pointer;
   }
   
+  .title {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.14286;
+letter-spacing: -0.01em;
+text-align: center;
+color: #323f47;
+margin-bottom: 24px;
+  }
+
+  .text {
+    font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.33333;
+letter-spacing: -0.01em;
+text-align: center;
+color: #323f47;
+  }

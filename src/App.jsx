@@ -6,6 +6,7 @@ import BoxForm from './components/BoxForm/BoxForm';
 import Counter from './components/Counter/Counter';
 import Calendar from './components/Calendar/Calendar';
 import Modal from './components/Modal/Modal';
+import css from '../src/components/Modal/Modal.module.css';
 
 function App() {
   const [users, setUser] = useState([]);
@@ -34,8 +35,8 @@ function App() {
       <Calendar />
       <button onClick={handleOpenModal}>Открыть модальное окно</button>
       <Modal show={showModal} handleClose={handleCloseModal}>
-      <h2>Это модальное окно</h2>
-      <p>Здесь можно разместить любое содержимое.</p>
+<h2 className={css.title}>Delete entry</h2>
+      <p className={css.text}>Are you sure you want to delete the entry?</p>
       </Modal>
     </>
   );
