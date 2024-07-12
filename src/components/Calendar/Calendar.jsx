@@ -49,7 +49,7 @@ function Calendar() {
           <img src={left} alt="Previous month" />
         </button>
         <span>
-          {currentDate.toLocaleString('en-US', { month: 'long' })} {currentDate.getFullYear()}
+          {currentDate.toLocaleString('en-US', { month: 'long' })}, {currentDate.getFullYear()}
         </span>
         <button
           className={css.button}
