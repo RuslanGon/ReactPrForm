@@ -7,6 +7,7 @@ import Counter from './components/Counter/Counter';
 import Calendar from './components/Calendar/Calendar';
 import Modal from './components/Modal/Modal';
 import css from '../src/components/Modal/Modal.module.css';
+import ModalSetting from './components/ModalSetting/ModalSetting';
 
 function App() {
   const [users, setUser] = useState([]);
