@@ -72,4 +72,6 @@
 
 .divmoth {
   padding-left: 300px;
+  display: flex;
+  align-items: center;
 }
