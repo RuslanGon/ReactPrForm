@@ -38,7 +38,8 @@ function Calendar() {
           }`}
           onClick={() => setSelectedDate(new Date(year, month, day))}
         >
-          <span>{day}</span>
+          <div className={css.dayNumber}>{day}</div>
+          <span className={css.percentage}>100%</span>
         </div>
       );
     }

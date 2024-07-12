@@ -28,19 +28,20 @@
   padding: 10px;
   cursor: pointer;
   display: flex;
+  flex-direction: column; /* добавлено для вертикального размещения */
   align-items: center;
   justify-content: center;
 }
 
-.day:hover span {
+.day:hover .dayNumber {
   background-color: grey;
 }
 
-.day.selected span {
+.day.selected .dayNumber {
   background-color: #d0e6a5;
 }
 
-.day span {
+.day .dayNumber {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,9 +52,15 @@
   color: #000;
 }
 
-.day.current span {
+.day.current .dayNumber {
   background-color: black;
   color: #9be1a0;
+}
+
+.percentage {
+  font-size: 12px; /* размер текста "100%" */
+  color: #666; /* цвет текста "100%" */
+  margin-top: 4px; /* отступ сверху от числа месяца */
 }
 
 .button {
@@ -61,18 +68,4 @@
   border: none;
   cursor: pointer;
   padding: 20px;
-}
-
-.title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.14286;
-  letter-spacing: -0.01em;
-  color: #323f47;
-  margin-left: 20px;
-}
-
-.css.divmoth {
- width: 161px;
 }
