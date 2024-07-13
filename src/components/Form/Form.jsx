@@ -17,7 +17,11 @@ const Form = () => {
           <h3>Your name</h3>
           <input className={css.inputtext} type="text" placeholder="Nadia" />
           <h3>Email</h3>
-          <input className={css.inputtext} type="email" placeholder="nadia10@gmail.com" />
+          <input
+            className={css.inputtext}
+            type="email"
+            placeholder="nadia10@gmail.com"
+          />
           <h3>My daily norma</h3>
           <div className={css.divgender}>
             <div className={css.divwoman}>
@@ -31,19 +35,18 @@ const Form = () => {
           </div>
           <div className={css.divtexta}>
             <p className={css.divtextatext}>
-              * V is the volume of the water norm in liters per <br /> day, M is your
-              body weight, T is the time of <br /> active sports, or another type of
-              activity <br /> commensurate in terms of loads (in the <br /> absence of these,
-              you must set 0)
+              * V is the volume of the water norm in liters per <br /> day, M is
+              your body weight, T is the time of <br /> active sports, or
+              another type of activity <br /> commensurate in terms of loads (in
+              the <br /> absence of these, you must set 0)
             </p>
           </div>
           <div className={css.danger}>
-          <img className={css.vector} src={vector} alt="" />
-          <p>Active time in hours</p>
+            <img className={css.vector} src={vector} alt="" />
+            <p>Active time in hours</p>
+          </div>
         </div>
-        </div>
-        
-        <div className={css.setdiv2}></div>
+        <div className={css.setdiv2}>
         <p>Your weight in kilograms:</p>
         <input type="text" placeholder="0" />
         <p>The time of active participation in sports:</p>
@@ -53,8 +56,9 @@ const Form = () => {
         </p>
         <h3>Write down how much water you will drink:</h3>
         <input type="text" placeholder="1.8" />
+        </div>
       </div>
-      <button>Save</button>
+      <button className={css.butsave}>Save</button>
     </form>
   );
 };
