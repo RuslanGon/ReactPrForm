@@ -23,12 +23,14 @@ const MainTitle = () => {
           <img src={Male3} alt="" />
         </div>
         <div>
+        <div className={css.divpos}>
           <button className={css.btn3}><img src={point1} alt="" />
             Habit drive
           </button>
           <button className={css.btn4}>View statistics</button>
         </div>
         <button className={css.btn5}>Personal rate setting</button>
+        </div>
       </div>
     </div>
   );
