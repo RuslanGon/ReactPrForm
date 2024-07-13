@@ -1,8 +1,8 @@
-import css from '../MainTitle/MainTitle.module.css'
-import Male1 from '../../image/Male1.png'
-import Male2 from '../../image/Male2.png'
-import Male3 from '../../image/Male3.png'
-
+import css from "../MainTitle/MainTitle.module.css";
+import Male1 from "../../image/Male1.png";
+import Male2 from "../../image/Male2.png";
+import Male3 from "../../image/Male3.png";
+import point1 from '../../image/point1.png'
 
 const MainTitle = () => {
   return (
@@ -23,16 +23,15 @@ const MainTitle = () => {
           <img src={Male3} alt="" />
         </div>
         <div>
-            <div>
-                <span></span>
-            <button>Habit drive</button>
-            </div>
-            <button>View statistics</button>
+          <button className={css.btn3}><img src={point1} alt="" />
+            Habit drive
+          </button>
+          <button className={css.btn4}>View statistics</button>
         </div>
-        <button>Personal rate setting</button>
+        <button className={css.btn5}>Personal rate setting</button>
       </div>
     </div>
   );
-}
+};
 
-export default MainTitle
+export default MainTitle;
