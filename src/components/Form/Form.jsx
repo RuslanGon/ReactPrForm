@@ -6,18 +6,18 @@ const Form = () => {
     <form className={css.setForm}>
       <div className={css.setdivmain}>
         <div className={css.setdiv1}>
-          <label>
-            <input type="radio" />
-            <span>woman</span>
+          <label className={css.label}>
+            <input className={css.radio} type="radio" />
+            <span className={css.man}>woman</span>
           </label>
-          <label>
-            <input type="radio" name="" id="" />
-            <span>man</span>
+          <label className={css.label}>
+            <input className={css.radio} type="radio" name="" id="" />
+            <span className={css.man}>man</span>
           </label>
           <h3>Your name</h3>
-          <input type="text" placeholder="Nadia" />
+          <input className={css.inputtext} type="text" placeholder="Nadia" />
           <h3>Email</h3>
-          <input type="email" placeholder="nadia10@gmail.com" />
+          <input className={css.inputtext} type="email" placeholder="nadia10@gmail.com" />
           <h3>My daily norma</h3>
           <div className={css.divgender}>
             <div className={css.divwoman}>
