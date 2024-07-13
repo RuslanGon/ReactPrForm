@@ -8,7 +8,7 @@ const Lable = () => {
     <div className={css.div}>
         <h4 className={css.title}>Nadia</h4>
         <img className={css.foto} src={foto} alt="" />
-        <button><img src={vector1} alt="" /></button>
+        <button className={css.btn}><img src={vector1} alt="" /></button>
         
     </div>
   )
