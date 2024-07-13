@@ -6,8 +6,8 @@ import css from '../Lable/Lable.module.css'
 const Lable = () => {
   return (
     <div className={css.div}>
-        <h4>Nadia</h4>
-        <img src={foto} alt="" />
+        <h4 className={css.title}>Nadia</h4>
+        <img className={css.foto} src={foto} alt="" />
         <button><img src={vector1} alt="" /></button>
         
     </div>
