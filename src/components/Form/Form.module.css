@@ -19,7 +19,7 @@ height: 20px;
     border: 1px solid rgba(47, 47, 47, 0.15);
 border-radius: 15px;
 padding: 16px 337px 16px 16px;
-width: 400px;
+width: 100px;
 height: 56px;
 padding-left: 16px;
 font-family: "Poppins", sans-serif;
@@ -61,6 +61,7 @@ padding: 16px;
 width: 400px;
 height: 152px;
 padding: 16px 16px;
+margin-top: 15px;
 }
 
 .divtextatext {
@@ -70,4 +71,26 @@ font-size: 18px;
 line-height: 1.5;
 letter-spacing: -0.01em;
 color: rgba(47, 47, 47, 0.6);
+
+}
+
+.danger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vector {
+    width: 12px;
+    height: 32px;
+}
+
+.setdivmain {
+    display: flex;
+}
+
+.setdiv2 {
+
+    display: flexbox;
+    flex-direction: column;
 }

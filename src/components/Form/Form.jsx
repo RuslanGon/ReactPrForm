@@ -37,11 +37,12 @@ const Form = () => {
               you must set 0)
             </p>
           </div>
-        </div>
-        <div>
-          <img src={vector} alt="" />
+          <div className={css.danger}>
+          <img className={css.vector} src={vector} alt="" />
           <p>Active time in hours</p>
         </div>
+        </div>
+        
         <div className={css.setdiv2}></div>
         <p>Your weight in kilograms:</p>
         <input type="text" placeholder="0" />
