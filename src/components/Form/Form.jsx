@@ -21,19 +21,19 @@ const Form = () => {
           <h3>My daily norma</h3>
           <div className={css.divgender}>
             <div className={css.divwoman}>
-              <p>For woman:</p>
-              <span>V=(M*0,03) + (T*0,4)</span>
+              <p className={css.forman}>For woman:</p>
+              <span className={css.formula}>V=(M*0,03) + (T*0,4)</span>
             </div>
             <div className={css.divman}>
-              <p>For man:</p>
-              <span>V=(M*0,04) + (T*0,6)</span>
+              <p className={css.forman}>For man:</p>
+              <span className={css.formula}>V=(M*0,04) + (T*0,6)</span>
             </div>
           </div>
-          <div>
-            <p>
-              * V is the volume of the water norm in liters per day, M is your
-              body weight, T is the time of active sports, or another type of
-              activity commensurate in terms of loads (in the absence of these,
+          <div className={css.divtexta}>
+            <p className={css.divtextatext}>
+              * V is the volume of the water norm in liters per <br /> day, M is your
+              body weight, T is the time of <br /> active sports, or another type of
+              activity <br /> commensurate in terms of loads (in the <br /> absence of these,
               you must set 0)
             </p>
           </div>
