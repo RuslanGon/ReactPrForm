@@ -45,7 +45,7 @@ function App() {
     <>
       <BoxForm />
       <Counter />
-      <Calendar handleOpenSettingModal={handleOpenSettingModal} /> {/* Передача функции в компонент Calendar */}
+      <Calendar handleOpenSettingModal={handleOpenSettingModal} /> 
       <button onClick={handleOpenModal}>Открыть модальное окно</button>
       <Modal show={showModal} handleClose={handleCloseModal}>
         <h2 className={css.title}>Delete entry</h2>
