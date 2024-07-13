@@ -18,10 +18,10 @@ const MainTitle = () => {
       </div>
       <div className={css.div2}>
         <div className={css.divfot1}>
-          <img src={Male1} alt="" />
-          <img src={Male2} alt="" />
-          <img src={Male3} alt="" />
-          <p className={css.ptext}>Our happy <span className={css.span}>customers</span></p>
+        <img className={css.male2} src={Male2} alt="" />
+          <img className={css.male1} src={Male1} alt="" />
+          <img className={css.male3} src={Male3} alt="" />
+          <p className={css.ptext}>Our <span className={css.span}>happy</span> customers </p>
         </div>
         <div>
         <div className={css.divpos}>

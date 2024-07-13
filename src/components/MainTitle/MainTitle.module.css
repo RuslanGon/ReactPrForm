@@ -171,8 +171,24 @@ font-weight: 700;
 font-size: 15px;
 line-height: 1.49333;
 color: #323f47;
+padding-left: 110px;
 }
 
 .span {
     color: #9be1a0;
+}
+.male2 {
+position: absolute;
+z-index: 2;
+}
+
+.male1 {
+    margin-left: 27px;
+    position: absolute;
+    z-index: 1;
+}
+
+.male3 {
+    margin-left: 62px;
+    position: absolute;
 }
