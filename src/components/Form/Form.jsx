@@ -3,13 +3,10 @@ import css from "../Form/Form.module.css";
 import vector from '../../image/vector.png';
 
 const Form = () => {
-  const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmit = data => {
     console.log(data);
-    // Дополнительные действия после отправки формы, если нужно
-
-    // Сброс формы после отправки
     reset();
   };
 
