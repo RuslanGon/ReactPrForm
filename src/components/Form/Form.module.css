@@ -23,20 +23,20 @@ height: 20px;
     color: #9BE1A0;
   }
 
-.inputtext {
+  .inputtext {
     border: 1px solid rgba(47, 47, 47, 0.15);
-border-radius: 15px;
-padding: 16px 337px 16px 16px;
-width: 70px;
-height: 36px;
-padding-left: 16px;
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.01em;
-color: #2f2f2f;
-}
+    border-radius: 15px;
+    padding: 16px;
+    width: 100%; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2f2f2f;
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+  }
 
 .divgender {
     display: flex;

@@ -1,16 +1,17 @@
-
 import { useForm } from 'react-hook-form';
 import css from "../Form/Form.module.css";
 import vector from '../../image/vector.png';
 
 const Form = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
 
   const onSubmit = data => {
     console.log(data);
-  };
+    // Дополнительные действия после отправки формы, если нужно
 
-  const gender = watch("gender");
+    // Сброс формы после отправки
+    reset();
+  };
 
   return (
     <form className={css.setForm} onSubmit={handleSubmit(onSubmit)}>
@@ -44,6 +45,7 @@ const Form = () => {
             type="text"
             placeholder="Nadia"
             {...register("name", { required: true })}
+            maxLength={25}
           />
           {errors.name && <p className={css.error}>Name is required.</p>}
           
@@ -53,6 +55,7 @@ const Form = () => {
             type="email"
             placeholder="nadia10@gmail.com"
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+            maxLength={25}
           />
           {errors.email && <p className={css.error}>Valid email is required.</p>}
           
@@ -87,6 +90,7 @@ const Form = () => {
             type="text"
             placeholder="0"
             {...register("weight", { required: true })}
+            maxLength={25}
           />
           {errors.weight && <p className={css.error}>Weight is required.</p>}
           
@@ -96,6 +100,7 @@ const Form = () => {
             type="text"
             placeholder="0"
             {...register("activeTime", { required: true })}
+            maxLength={25}
           />
           {errors.activeTime && <p className={css.error}>Active time is required.</p>}
           
@@ -108,6 +113,7 @@ const Form = () => {
             type="text"
             placeholder="1.8"
             {...register("waterIntake", { required: true })}
+            maxLength={25}
           />
           {errors.waterIntake && <p className={css.error}>Water intake is required.</p>}
         </div>
