@@ -66,8 +66,8 @@ function App() {
         <h2>Setting</h2>
         <img className={css.foto} src={foto} alt="" />
         <div className={css.divfoto}>
-          <img src={upload} alt="" />
-          <p className={css.settext}>Upload a photo</p>
+        <a href=""> <img src={upload} alt="" /></a>
+        <a className={css.settext} href="">Upload a photo</a>
         </div>
         <h4 className={css.settitle}>Your gender identity</h4>
         <Form />

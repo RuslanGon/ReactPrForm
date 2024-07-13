@@ -8,12 +8,20 @@ color: #2f2f2f;
 margin-right: 20px;
 }
 
+.label {
+gap: 5px;
+  }
+
 .radio {
 margin-right: 5px;
 color: #9BE1A0;
 width: 20px;
 height: 20px;
 }
+
+.radio:checked + .man {
+    color: #9BE1A0;
+  }
 
 .inputtext {
     border: 1px solid rgba(47, 47, 47, 0.15);
@@ -93,7 +101,7 @@ color: rgba(47, 47, 47, 0.6);
 .setdiv2 {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .butsave {
@@ -122,3 +130,8 @@ line-height: 1.5;
 letter-spacing: -0.01em;
 color: #2f2f2f;
 }
+
+.error {
+    color: red;
+    font-size: 14px;
+  }
