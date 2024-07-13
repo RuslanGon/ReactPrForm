@@ -4,7 +4,7 @@ import left from "../../image/left.png";
 import right from "../../image/right.png";
 import pie from "../../image/pie.png";
 
-function Calendar() {
+function Calendar({ handleOpenSettingModal }) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -36,7 +36,7 @@ function Calendar() {
           className={`${css.day} ${isSelected ? css.selected : ""} ${
             isToday ? css.current : ""
           }`}
-          onClick={() => handleDayClick(year, month, day)} // Использование функции для обработки клика
+          onClick={() => handleDayClick(year, month, day)} // Вызов функции обработки клика
         >
           <div className={css.dayNumber}>{day}</div>
           <span className={css.percentage}>100%</span>
@@ -49,9 +49,8 @@ function Calendar() {
 
   // Функция для обработки клика по дню
   const handleDayClick = (year, month, day) => {
-    console.log("Привет"); // Вывод сообщения в консоль
     setSelectedDate(new Date(year, month, day));
-    // Добавьте здесь логику открытия модального окна, если необходимо
+    handleOpenSettingModal(); // Вызов функции для открытия модального окна настроек
   };
 
   return (

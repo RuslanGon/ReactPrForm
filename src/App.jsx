@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './App.css';
 import { nanoid } from 'nanoid';
@@ -46,7 +45,7 @@ function App() {
     <>
       <BoxForm />
       <Counter />
-      <Calendar />
+      <Calendar handleOpenSettingModal={handleOpenSettingModal} /> {/* Передача функции в компонент Calendar */}
       <button onClick={handleOpenModal}>Открыть модальное окно</button>
       <Modal show={showModal} handleClose={handleCloseModal}>
         <h2 className={css.title}>Delete entry</h2>
@@ -58,7 +57,6 @@ function App() {
           Cancel
         </button>
       </Modal>
-      <button onClick={handleOpenSettingModal}>Открыть настройки</button>
       <ModalSetting
         show={showSettingModal}
         handleClose={handleCloseSettingModal}
@@ -66,12 +64,11 @@ function App() {
         <h2>Setting</h2>
         <img className={css.foto} src={foto} alt="" />
         <div className={css.divfoto}>
-        <a href=""> <img src={upload} alt="" /></a>
-        <a className={css.settext} href="">Upload a photo</a>
+          <a href=""> <img src={upload} alt="" /></a>
+          <a className={css.settext} href="">Upload a photo</a>
         </div>
         <h4 className={css.settitle}>Your gender identity</h4>
         <Form />
-       
       </ModalSetting>
     </>
   );
