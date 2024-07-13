@@ -47,15 +47,15 @@ const Form = () => {
           </div>
         </div>
         <div className={css.setdiv2}>
-        <p>Your weight in kilograms:</p>
-        <input type="text" placeholder="0" />
-        <p>The time of active participation in sports:</p>
-        <input type="text" placeholder="0" />
+        <p className={css.kils}>Your weight in kilograms:</p>
+        <input className={css.inputtext} type="text" placeholder="0" />
+        <p className={css.kils}>The time of active participation in sports:</p>
+        <input className={css.inputtext} type="text" placeholder="0" />
         <p>
           The required amount of water in liters per day: <span>1.8 L</span>
         </p>
         <h3>Write down how much water you will drink:</h3>
-        <input type="text" placeholder="1.8" />
+        <input className={css.inputtext} type="text" placeholder="1.8" />
         </div>
       </div>
       <button className={css.butsave}>Save</button>
