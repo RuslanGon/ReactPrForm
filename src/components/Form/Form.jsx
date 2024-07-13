@@ -1,4 +1,5 @@
 import css from "../Form/Form.module.css";
+import vector from '../../image/vector.png'
 
 const Form = () => {
   return (
@@ -28,9 +29,31 @@ const Form = () => {
               <span>V=(M*0,04) + (T*0,6)</span>
             </div>
           </div>
+          <div>
+            <p>
+              * V is the volume of the water norm in liters per day, M is your
+              body weight, T is the time of active sports, or another type of
+              activity commensurate in terms of loads (in the absence of these,
+              you must set 0)
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src={vector} alt="" />
+          <p>Active time in hours</p>
         </div>
         <div className={css.setdiv2}></div>
+        <p>Your weight in kilograms:</p>
+        <input type="text" placeholder="0" />
+        <p>The time of active participation in sports:</p>
+        <input type="text" placeholder="0" />
+        <p>
+          The required amount of water in liters per day: <span>1.8 L</span>
+        </p>
+        <h3>Write down how much water you will drink:</h3>
+        <input type="text" placeholder="1.8" />
       </div>
+      <button>Save</button>
     </form>
   );
 };
