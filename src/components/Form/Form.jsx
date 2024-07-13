@@ -3,8 +3,6 @@ import css from "../Form/Form.module.css";
 import vector from '../../image/vector.png';
 
 
-
-
 const Form = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 

@@ -36,7 +36,7 @@ function Calendar() {
           className={`${css.day} ${isSelected ? css.selected : ""} ${
             isToday ? css.current : ""
           }`}
-          onClick={() => setSelectedDate(new Date(year, month, day))}
+          onClick={() => handleDayClick(year, month, day)} // Использование функции для обработки клика
         >
           <div className={css.dayNumber}>{day}</div>
           <span className={css.percentage}>100%</span>
@@ -45,6 +45,13 @@ function Calendar() {
     }
 
     return days;
+  };
+
+  // Функция для обработки клика по дню
+  const handleDayClick = (year, month, day) => {
+    console.log("Привет"); // Вывод сообщения в консоль
+    setSelectedDate(new Date(year, month, day));
+    // Добавьте здесь логику открытия модального окна, если необходимо
   };
 
   return (
