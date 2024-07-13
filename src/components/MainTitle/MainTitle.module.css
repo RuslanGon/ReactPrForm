@@ -1,0 +1,80 @@
+
+.div1 {
+    border-radius: 30px;
+width: 672px;
+height: 736px;
+background: #dfdaf6;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #323f47;
+padding-left: 33px;
+padding-top: 32px;
+margin-bottom: 132px;
+}
+
+.maintext {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 80px;
+line-height: 0.95;
+letter-spacing: -0.01em;
+color: #323f47;
+padding-left: 64px;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: 0.06em;
+color: #2f2f2f;
+padding-left: 64px;
+}
+
+.btn1 {
+    border-radius: 30px;
+padding: 18px 40px;
+width: 169px;
+height: 60px;
+background: #9be1a0;
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.01em;
+text-align: center;
+color: #323f47;
+border: none;
+cursor: pointer;
+}
+
+.btn2 {
+    border: 1px solid #323f47;
+border-radius: 30px;
+padding: 18px 40px;
+width: 135px;
+height: 60px;
+background-color: transparent;
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.01em;
+text-align: center;
+color: #323f47;
+cursor: pointer;
+}
+
+.divbtn {
+    display: flex;
+    gap: 16px;
+    padding-left: 64px;
+}

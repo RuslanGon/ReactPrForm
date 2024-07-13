@@ -12,6 +12,7 @@ import foto from '../src/image/foto.png';
 import upload from '../src/image/upload.png';
 import Form from './components/Form/Form';
 import Lable from './components/Lable/Lable';
+import MainTitle from './components/MainTitle/MainTitle';
 
 function App() {
   const [users, setUser] = useState([]);
@@ -72,6 +73,7 @@ function App() {
         <Form />
       </ModalSetting>
       <Lable />
+      <MainTitle />
     </>
   );
 }
