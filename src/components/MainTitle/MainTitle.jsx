@@ -17,10 +17,11 @@ const MainTitle = () => {
         </div>
       </div>
       <div className={css.div2}>
-        <div>
+        <div className={css.divfot1}>
           <img src={Male1} alt="" />
           <img src={Male2} alt="" />
           <img src={Male3} alt="" />
+          <p className={css.ptext}>Our happy <span className={css.span}>customers</span></p>
         </div>
         <div>
         <div className={css.divpos}>

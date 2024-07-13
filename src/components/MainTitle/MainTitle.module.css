@@ -141,13 +141,38 @@ text-align: center;
 color: #323f47;
 border: none;
 cursor: pointer;
-margin-top: 584px;
+margin-top: 40px;
 margin-left: 359px;
-
 }
 
 .divpos {
     position: absolute;
     top: 594px;
 right: 32px;
+}
+
+.divfot1 {
+    border-radius: 30px;
+padding: 10px 20px;
+width: 237px;
+height: 67px;
+box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+background: #fff;
+display: flex;
+text-align: center;
+align-items: center;
+margin-left: 32px;
+margin-top: 514px;
+}
+
+.ptext {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 15px;
+line-height: 1.49333;
+color: #323f47;
+}
+
+.span {
+    color: #9be1a0;
 }
