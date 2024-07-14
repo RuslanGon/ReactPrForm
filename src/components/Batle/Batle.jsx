@@ -28,21 +28,26 @@ const Batle = () => {
       <ul className={css.list}>
             <li className={css.item}> 
             <img src={water} width={44} height={45} alt="" />
+            <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
+            <span className={css.spamli}>7:00 AM</span>
+            </div>
             <img src={pan} width={16} height={16} alt="" />
             </li>
             <li className={css.item}> 
             <img src={water} width={44} height={45} alt="" />
             <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
-            <span className={css.spamli}>250 ml</span>
+            <span className={css.spamli}>11:00 AM</span>
             </div>
-            
             <img src={pan} width={16} height={16}  alt="" />
             </li>
             <li className={css.item}> 
             <img src={water} width={44} height={45} alt="" />
+            <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
+            <span className={css.spamli}>14:00 AM</span>
+            </div>
             <img src={pan} width={16} height={16}  alt="" />
 
             </li>
