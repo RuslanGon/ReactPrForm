@@ -58,10 +58,9 @@ const Batle = () => {
             <img src={pan} width={16} height={16} alt="" />
             <img src={kor} width={16} height={16} alt="" />
             </div>
-
-
             </li>
         </ul>
+        <hr className={css.line} />
     </div>
   );
 };
