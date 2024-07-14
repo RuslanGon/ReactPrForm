@@ -1,7 +1,33 @@
 .divmain {
-    
+    border-radius: 30px;
+    width: 672px;
+    height: 736px;
+background: #f0eff4;
+padding: 32px 32px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spantitle {
+    font-family: "Gilroy", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.05556;
+letter-spacing: -0.01em;
+color: #323f47;
+}
+
+.title1 {
+    font-family: "Gilroy", sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.05556;
+letter-spacing: -0.01em;
+color: #323f47;
+}
 .divleb {
     display: flex;
     align-items: center;

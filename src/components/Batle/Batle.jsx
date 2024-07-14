@@ -4,8 +4,8 @@ import vector1 from '../../image/vector1.png'
 const Batle = () => {
   return (
     <div className={css.divmain}>
-        <div>
-        <h1>Hello, Nadia!</h1>
+        <div className={css.header}>
+        <h1 className={css.title1}>Hello, <span className={css.spantitle}>Nadia!</span></h1>
         <div className={css.divleb}>
         <h4 className={css.title}>Nadia</h4>
         <img className={css.foto} src={foto} alt="" />
