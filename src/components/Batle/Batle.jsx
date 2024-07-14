@@ -22,6 +22,11 @@ const Batle = () => {
         <button className={css.btn}><img src={plusik} alt="" /></button>
         <p className={css.add}>Add water</p>
       </div>
+      <ul className={css.list}>
+            <li className={css.item}></li>
+            <li className={css.item}></li>
+            <li className={css.item}></li>
+        </ul>
     </div>
   );
 };
