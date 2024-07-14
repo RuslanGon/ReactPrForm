@@ -60,3 +60,36 @@ color: #323f47;
     cursor: pointer;
     border: none;
 }
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-top: 49px;
+}
+
+.tet {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.14286;
+letter-spacing: -0.01em;
+color: #323f47;
+margin-right: 465px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.add {
+    font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.01em;
+text-align: center;
+color: #323f47;
+}

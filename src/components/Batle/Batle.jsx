@@ -17,12 +17,10 @@ const Batle = () => {
           </button>
         </div>
       </div>
-      <div>
-      <h2>Today</h2>
-      <button> <img src={plusik} alt="" /></button>
-      <p>Add water</p>
-     
-
+      <div className={css.head}>
+        <h2 className={css.tet}>Today</h2>
+        <button className={css.btn}><img src={plusik} alt="" /></button>
+        <p className={css.add}>Add water</p>
       </div>
     </div>
   );
