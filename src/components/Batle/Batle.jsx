@@ -30,25 +30,35 @@ const Batle = () => {
             <img src={water} width={44} height={45} alt="" />
             <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
-            <span className={css.spamli}>7:00 AM</span>
+            <span className={css.spamlii}>7:00 AM</span>
             </div>
+            <div className={css.div6}>
             <img src={pan} width={16} height={16} alt="" />
+            <img src={kor} width={16} height={16} alt="" />
+            </div>
             </li>
             <li className={css.item}> 
             <img src={water} width={44} height={45} alt="" />
             <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
-            <span className={css.spamli}>11:00 AM</span>
+            <span className={css.spamlii}>11:00 AM</span>
             </div>
-            <img src={pan} width={16} height={16}  alt="" />
+            <div className={css.div6}>
+            <img src={pan} width={16} height={16} alt="" />
+            <img src={kor} width={16} height={16} alt="" />
+            </div>
             </li>
             <li className={css.item}> 
             <img src={water} width={44} height={45} alt="" />
             <div className={css.div7}>
             <span className={css.spamli}>250 ml</span>
-            <span className={css.spamli}>14:00 AM</span>
+            <span className={css.spamlii}>14:00 AM</span>
             </div>
-            <img src={pan} width={16} height={16}  alt="" />
+            <div className={css.div6}>
+            <img src={pan} width={16} height={16} alt="" />
+            <img src={kor} width={16} height={16} alt="" />
+            </div>
+
 
             </li>
         </ul>
