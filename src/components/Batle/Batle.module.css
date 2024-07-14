@@ -74,7 +74,7 @@ font-size: 28px;
 line-height: 1.14286;
 letter-spacing: -0.01em;
 color: #323f47;
-margin-right: 445px;
+margin-right: 460px;
 }
 
 .btn {
@@ -95,7 +95,7 @@ color: #323f47;
 }
 
 .list {
-    width: 658px;
+    width: 670px;
     display: flex;
     gap: 16px;
     margin-top: 24px;
