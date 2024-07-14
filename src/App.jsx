@@ -13,6 +13,7 @@ import upload from '../src/image/upload.png';
 import Form from './components/Form/Form';
 import Lable from './components/Lable/Lable';
 import MainTitle from './components/MainTitle/MainTitle';
+import Batle from './components/Batle/Batle';
 
 function App() {
   const [users, setUser] = useState([]);
@@ -74,6 +75,7 @@ function App() {
       </ModalSetting>
       <Lable />
       <MainTitle />
+      <Batle />
     </>
   );
 }
