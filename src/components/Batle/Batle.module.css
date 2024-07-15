@@ -213,7 +213,7 @@
 .graf {
     position: absolute;
     left: 80px;
-    bottom: 67px;
+    bottom: 23px;
 }
 
 .style1 {
@@ -252,8 +252,9 @@
     left: 567px;
 }
 
-.style6 {
+.style7 {
     position: absolute;
     top: 27px;
-    left: 599px;
+    left: 597px;
 }
+
