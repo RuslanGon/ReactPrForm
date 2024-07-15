@@ -110,11 +110,11 @@ const Batle = () => {
       <li>22</li>
     </ul>
     <img className={css.graf} src={graf} alt="" />
-    <img src={elips} alt="" />
+  {['style1', 'style2', 'style3', 'style4', 'style5', 'style6', 'style7'].map((style, index) => (
+    <img key={index} className={css[style]} src={elips} alt="" />
+  ))}
    </div>
   </div>
-  
-  
   );
 };
 

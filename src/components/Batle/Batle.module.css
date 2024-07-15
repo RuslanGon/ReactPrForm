@@ -214,3 +214,23 @@ gap: 17px;
     left: 80px;
     bottom: 67px;
 }
+
+.style1 {
+    position: absolute;
+    top: 15px;
+left: 103px;
+    }
+
+    .style2 {
+        position: absolute;
+        top: 45px;
+    left: 179px;
+        }
+
+        .style3 {
+            position: absolute;
+            top: 45px;
+        left: 340px;
+            }
+    
+
