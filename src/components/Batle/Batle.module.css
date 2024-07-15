@@ -1,3 +1,5 @@
+
+
 .divmain {
     border-radius: 30px;
     width: 672px;
@@ -187,3 +189,22 @@ right: 40px;
 top: 452px;
 }
 
+
+.list1 {
+padding: 0px;
+display: flex;
+flex-direction: column;
+gap: 17px;
+}
+
+.list2 {
+    padding: 0px;
+    display: flex;
+    gap: 77px;
+    margin-left: 79px;
+    margin-top: 20px;
+}
+
+.static {
+    position: relative;
+}

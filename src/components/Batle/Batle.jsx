@@ -61,7 +61,7 @@ const Batle = () => {
           <h2 className={css.stata}>Statistics</h2>
           <div className={css.monthWrapper}>
             <button
-              className={css.button}
+              className={`${css.button} ${css.leftButton}`}
               onClick={() =>
                 setCurrentDate(
                   new Date(currentDate.setMonth(currentDate.getMonth() - 1))
@@ -75,7 +75,7 @@ const Batle = () => {
               {currentDate.getFullYear()}
             </span>
             <button
-              className={css.button}
+              className={`${css.button} ${css.rightButton}`}
               onClick={() =>
                 setCurrentDate(
                   new Date(currentDate.setMonth(currentDate.getMonth() + 1))
@@ -89,7 +89,27 @@ const Batle = () => {
         <img className={css.pie} src={pie} alt="Pie chart" />
       </div>
     </div>
+   <div className={css.static}>
+   <ul className={css.list1}>
+      <li> 2.5 L</li>
+      <li>2 L</li>
+      <li>1.5L</li>
+      <li> 1 L</li>
+      <li>0.5 L</li>
+      <li>0%</li>
+    </ul>
+    <ul className={css.list2}>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+    </ul>
+   </div>
   </div>
+  
   
   );
 };
