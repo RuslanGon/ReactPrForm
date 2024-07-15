@@ -1,13 +1,11 @@
-
-
 .divmain {
     border-radius: 30px;
     width: 672px;
     height: 736px;
-background: #f0eff4;
-padding: 32px 32px;
-margin-top: 20px;
-position: relative;
+    background: #f0eff4;
+    padding: 32px 32px;
+    margin-top: 20px;
+    position: relative;
 }
 
 .header {
@@ -17,21 +15,22 @@ position: relative;
 
 .spantitle {
     font-family: "Gilroy", sans-serif;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.05556;
-letter-spacing: -0.01em;
-color: #323f47;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.05556;
+    letter-spacing: -0.01em;
+    color: #323f47;
 }
 
 .title1 {
     font-family: "Gilroy", sans-serif;
-font-weight: 400;
-font-size: 36px;
-line-height: 1.05556;
-letter-spacing: -0.01em;
-color: #323f47;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.05556;
+    letter-spacing: -0.01em;
+    color: #323f47;
 }
+
 .divleb {
     display: flex;
     align-items: center;
@@ -73,12 +72,12 @@ color: #323f47;
 
 .tet {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 28px;
-line-height: 1.14286;
-letter-spacing: -0.01em;
-color: #323f47;
-margin-right: 460px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: -0.01em;
+    color: #323f47;
+    margin-right: 460px;
 }
 
 .btn {
@@ -90,12 +89,12 @@ margin-right: 460px;
 
 .add {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.01em;
-text-align: center;
-color: #323f47;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #323f47;
 }
 
 .list {
@@ -110,36 +109,38 @@ color: #323f47;
 
 .item {
     border-radius: 15px;
-padding-top: 30px;
-padding-left: 20px;
-padding-right: 20px;
-width: 192px;
-height: 86px;
-backdrop-filter: blur(33.599998474121094px);
-background: #fff;
-display: flex;
-text-align: center;
-justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 192px;
+    height: 86px;
+    backdrop-filter: blur(33.599998474121094px);
+    background: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .spamli {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 15px;
-line-height: 1.49333;
-color: #323f47;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.49333;
+    color: #323f47;
 }
 
 .div7 {
     display: flex;
     flex-direction: column;
-    gap: 7px; /* Расстояние между элементами */
+    gap: 7px;
+    /* Расстояние между элементами */
 }
 
 .div6 {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Расстояние между элементами */
+    gap: 30px;
+    /* Расстояние между элементами */
 }
 
 .spamlii {
@@ -151,7 +152,7 @@ color: #323f47;
 }
 
 .line {
-    margin-top:24px;
+    margin-top: 24px;
     border: none;
     border-radius: 9px;
     width: 658px;
@@ -161,12 +162,12 @@ color: #323f47;
 
 .stata {
     font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 28px;
-line-height: 1.14286;
-letter-spacing: -0.01em;
-color: #323f47;
-margin-right: 270px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: -0.01em;
+    color: #323f47;
+    margin-right: 270px;
 }
 
 .divmoth1 {
@@ -184,17 +185,17 @@ margin-right: 270px;
 }
 
 .pie {
-position: absolute;
-right: 40px;
-top: 452px;
+    position: absolute;
+    right: 40px;
+    top: 452px;
 }
 
 
 .list1 {
-padding: 0px;
-display: flex;
-flex-direction: column;
-gap: 17px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
 }
 
 .list2 {
@@ -218,19 +219,41 @@ gap: 17px;
 .style1 {
     position: absolute;
     top: 15px;
-left: 103px;
-    }
+    left: 103px;
+}
 
-    .style2 {
-        position: absolute;
-        top: 45px;
+.style2 {
+    position: absolute;
+    top: 50px;
     left: 179px;
-        }
+}
 
-        .style3 {
-            position: absolute;
-            top: 45px;
-        left: 340px;
-            }
-    
+.style3 {
+    position: absolute;
+    top: 45px;
+    left: 340px;
+}
 
+.style4 {
+    position: absolute;
+    top: 0px;
+    left: 254px;
+}
+
+.style5 {
+    position: absolute;
+    top: -3px;
+    left: 482px;
+}
+
+.style6 {
+    position: absolute;
+    top: 57px;
+    left: 567px;
+}
+
+.style6 {
+    position: absolute;
+    top: 27px;
+    left: 599px;
+}
