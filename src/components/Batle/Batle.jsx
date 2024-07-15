@@ -9,6 +9,7 @@ import left from "../../image/left.png";
 import right from "../../image/right.png";
 import pie from "../../image/pie.png";
 import graf from '../../image/graf.png'
+import elips from '../../image/elips.png'
 import { useState } from "react";
 
 const Batle = () => {
@@ -109,6 +110,7 @@ const Batle = () => {
       <li>22</li>
     </ul>
     <img className={css.graf} src={graf} alt="" />
+    <img src={elips} alt="" />
    </div>
   </div>
   
