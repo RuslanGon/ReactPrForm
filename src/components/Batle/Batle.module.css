@@ -103,7 +103,23 @@
     margin-top: 24px;
     list-style-type: none;
     padding: 0;
-    overflow-x: auto; /* горизонтальный скролл */
+    overflow-x: scroll; /* горизонтальный скролл */
+    white-space: nowrap; /* предотвращает перенос строк */
+    scrollbar-width: thin; /* для Firefox */
+    scrollbar-color: #323f47 #f0eff4; /* цвет скроллбара и трека для Firefox */
+  }
+  
+  .list::-webkit-scrollbar {
+    height: 8px; /* высота скроллбара */
+  }
+  
+  .list::-webkit-scrollbar-thumb {
+    background-color: #323f47; /* цвет ползунка скроллбара */
+    border-radius: 8px; /* скругление углов ползунка */
+  }
+  
+  .list::-webkit-scrollbar-track {
+    background-color: #f0eff4; /* цвет трека скроллбара */
   }
   
   .item {
@@ -111,11 +127,11 @@
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 192px;
+    width: 192px; /* фиксированная ширина */
     height: 86px;
     backdrop-filter: blur(33.599998474121094px);
     background: #fff;
-    display: flex;
+    display: inline-flex; /* изменен для горизонтального скролла */
     text-align: center;
     justify-content: space-between;
   }
@@ -155,7 +171,8 @@
     width: 658px;
     height: 8px;
     background: linear-gradient(to right, #323F47 33%, #fff 33%);
-    cursor: pointer; /* курсор для указания на интерактивность */
+    cursor: ew-resize; /* курсор для указания на интерактивность */
+    user-select: none; /* отключаем выделение текста */
   }
   
   .stata {
