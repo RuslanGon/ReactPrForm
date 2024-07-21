@@ -6,32 +6,32 @@
     padding: 32px 32px;
     margin-top: 20px;
     position: relative;
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
-}
-
-.spantitle {
+  }
+  
+  .spantitle {
     font-family: "Gilroy", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.05556;
     letter-spacing: -0.01em;
     color: #323f47;
-}
-
-.title1 {
+  }
+  
+  .title1 {
     font-family: "Gilroy", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 1.05556;
     letter-spacing: -0.01em;
     color: #323f47;
-}
-
-.divleb {
+  }
+  
+  .divleb {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,9 +41,9 @@
     width: 157px;
     height: 56px;
     background: #323f47;
-}
-
-.title {
+  }
+  
+  .title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -51,26 +51,26 @@
     letter-spacing: -0.01em;
     text-align: center;
     color: #fff;
-}
-
-.foto {
+  }
+  
+  .foto {
     width: 44px;
     height: 44px;
-}
-
-.btn {
+  }
+  
+  .btn {
     background-color: transparent;
     cursor: pointer;
     border: none;
-}
-
-.head {
+  }
+  
+  .head {
     display: flex;
     align-items: center;
     margin-top: 49px;
-}
-
-.tet {
+  }
+  
+  .tet {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 28px;
@@ -78,16 +78,16 @@
     letter-spacing: -0.01em;
     color: #323f47;
     margin-right: 460px;
-}
-
-.btn {
+  }
+  
+  .btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     margin-left: 10px;
-}
-
-.add {
+  }
+  
+  .add {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -95,19 +95,18 @@
     letter-spacing: -0.01em;
     text-align: center;
     color: #323f47;
-}
-
-.list {
-    width: 670px;
+  }
+  
+  .list {
     display: flex;
     gap: 16px;
     margin-top: 24px;
     list-style-type: none;
-    padding: 0px;
-
-}
-
-.item {
+    padding: 0;
+    overflow-x: auto; /* горизонтальный скролл */
+  }
+  
+  .item {
     border-radius: 15px;
     padding-top: 30px;
     padding-left: 20px;
@@ -119,48 +118,47 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-}
-
-.spamli {
+  }
+  
+  .spamli {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 1.49333;
     color: #323f47;
-}
-
-.div7 {
+  }
+  
+  .div7 {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    /* Расстояние между элементами */
-}
-
-.div6 {
+  }
+  
+  .div6 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* Расстояние между элементами */
-}
-
-.spamlii {
+  }
+  
+  .spamlii {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.86667;
     color: rgba(47, 47, 47, 0.6);
-}
-
-.line {
+  }
+  
+  .line {
     margin-top: 24px;
     border: none;
     border-radius: 9px;
     width: 658px;
     height: 8px;
     background: linear-gradient(to right, #323F47 33%, #fff 33%);
-}
-
-.stata {
+    cursor: pointer; /* курсор для указания на интерактивность */
+  }
+  
+  .stata {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 28px;
@@ -168,93 +166,91 @@
     letter-spacing: -0.01em;
     color: #323f47;
     margin-right: 270px;
-}
-
-.divmoth1 {
+  }
+  
+  .divmoth1 {
     display: flex;
     align-items: center;
     text-align: center;
-
-}
-
-.button {
+  }
+  
+  .button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 30px;
-}
-
-.pie {
+  }
+  
+  .pie {
     position: absolute;
     right: 40px;
     top: 452px;
-}
-
-
-.list1 {
-    padding: 0px;
+  }
+  
+  .list1 {
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 17px;
-}
-
-.list2 {
-    padding: 0px;
+  }
+  
+  .list2 {
+    padding: 0;
     display: flex;
     gap: 71px;
     margin-left: 79px;
     margin-top: 20px;
-}
-
-.static {
+  }
+  
+  .static {
     position: relative;
-}
-
-.graf {
+  }
+  
+  .graf {
     position: absolute;
     left: 80px;
     bottom: 23px;
-}
-
-.style1 {
+  }
+  
+  .style1 {
     position: absolute;
     top: 15px;
     left: 103px;
-}
-
-.style2 {
+  }
+  
+  .style2 {
     position: absolute;
     top: 50px;
     left: 179px;
-}
-
-.style3 {
+  }
+  
+  .style3 {
     position: absolute;
     top: 45px;
     left: 340px;
-}
-
-.style4 {
+  }
+  
+  .style4 {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 254px;
-}
-
-.style5 {
+  }
+  
+  .style5 {
     position: absolute;
     top: -3px;
     left: 482px;
-}
-
-.style6 {
+  }
+  
+  .style6 {
     position: absolute;
     top: 57px;
     left: 567px;
-}
-
-.style7 {
+  }
+  
+  .style7 {
     position: absolute;
     top: 27px;
     left: 597px;
-}
-
+  }
+  
